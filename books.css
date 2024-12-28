@@ -1,1 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.container {
+    padding: 10px;
+}
+
+.book-container {
+    padding: 20px;
+    width: 25%;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.book-container h2 {
+    color: blueviolet;
+}
+
+.book-container button {
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    font-size: 25px;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+
+.popup-box {
+    background-color: white;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+
+.popup-box input,
+.popup-box textarea {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+
+.popup-box textarea {
+    resize: none;
+    height: 100px;
+}
+
+.popup-box input::placeholder,
+.popup-box textarea::placeholder {
+    color: blueviolet;
+}
+
+.popup-box button {
+    background-color: black;
+    padding: 10px 20px;
+    border: none;
+    color: azure;
+    margin: 5px;
+}
+
+.popup-box input:focus,
+.popup-box textarea:focus {
+    outline: none;
+}
 
