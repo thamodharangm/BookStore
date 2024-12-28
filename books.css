@@ -135,3 +135,30 @@ form button#cancel-popup {
 form button#cancel-popup:hover {
     background-color: #dc2626;
 }
+.add-button {
+    background-color: #e74c3c; /* Vibrant red color */
+    border-radius: 50%; /* Round shape */
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    font-size: 28px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for background and size */
+}
+
+/* Hover effect for the button */
+.add-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Focus effect for the button */
+.add-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 5px rgba(231, 76, 60, 0.7); /* Red glow effect when focused */
+}
+
