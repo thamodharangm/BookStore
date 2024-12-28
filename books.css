@@ -74,61 +74,64 @@
             text-align: center;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-        }
+      form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
 
-        form input, form textarea, form button {
-            margin: 10px 0;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+form input[type="text"],
+form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease;
+}
 
-        form button {
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
+form input[type="text"]:focus,
+form textarea:focus {
+    border: 1px solid #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
 
-        form button#add-book {
-            background: #2575fc;
-            color: white;
-            border: none;
-        }
+form textarea {
+    height: 100px;
+    resize: none;
+}
 
-        form button#add-book:hover {
-            background: #6a11cb;
-        }
+form button {
+    width: 48%;
+    padding: 10px;
+    margin: 10px 1%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
-        form button#cancel-popup {
-            background: #ddd;
-        }
+form button#add-book {
+    background-color: #3b82f6;
+    color: white;
+}
 
-        form button#cancel-popup:hover {
-            background: #bbb;
-        }
+form button#add-book:hover {
+    background-color: #2563eb;
+}
 
-        .add-button {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #6a11cb;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
+form button#cancel-popup {
+    background-color: #f87171;
+    color: white;
+}
 
-        .add-button:hover {
-            background: #2575fc;
-            transform: scale(1.1);
-        }
+form button#cancel-popup:hover {
+    background-color: #dc2626;
+}
